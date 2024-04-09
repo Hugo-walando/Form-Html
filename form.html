@@ -54,13 +54,13 @@
         </li>
         <li>
           <label for="nationality">Nationalité</label>
-
           <select
             id="nationality"
             name="nationality"
             class="form-control"
             required
           >
+            <option value="" hidden disabled selected></option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Åland Islands">Åland Islands</option>
             <option value="Albania">Albania</option>
@@ -363,7 +363,14 @@
         </li>
         <li>
           <label for="birth_date">Pays de naissance</label>
-          <select id="birth_country" name="birth_country" class="form-control">
+          <select
+            id="birth_country"
+            name="birth_country"
+            class="form-control"
+            required
+            size="1"
+          >
+            <option value="" hidden disabled selected></option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Åland Islands">Åland Islands</option>
             <option value="Albania">Albania</option>
