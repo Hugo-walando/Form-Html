@@ -7,16 +7,75 @@
   </head>
   <body>
     <form>
-      <label>Prénom</label>
-      <input type="text" name="name" required />
-      <label>nom</label>
-      <input type="text" name="name" required />
-      <label>Prénom</label>
-      <input type="text" name="name" required />
-      <label>Prénom</label>
-      <input type="text" name="name" required />
-      <label>Prénom</label>
-      <input type="text" name="name" required />
+      <ul>
+        <li>
+          <label>Prénom :</label>
+          <input type="text" name="firstname" required />
+        </li>
+        <li>
+          <label>Nom :</label>
+          <input type="text" name="lastname" required />
+        </li>
+        <li>
+          <label>Age :</label>
+          <input type="number" name="age" required />
+        </li>
+        <li>
+          <label>Sexe :</label>
+          <input type="radio" name="gender" id="man" required />
+          <label for="man">Homme</label>
+          <input type="radio" name="gender" id="woman" />
+          <label for="woman">Femme</label>
+        </li>
+        <li>
+          <label>Email :</label>
+          <input type="email" name="email" required />
+        </li>
+        <li>
+          <label>Adresse postale :</label>
+          <input type="text" name="address" required />
+        </li>
+        <li>
+          <label>Code postal</label>
+          <input type="number" name="address_code" required />
+        </li>
+        <li>
+          <label>Ville</label>
+          <input type="text" name="city" required />
+        </li>
+        <li>
+          <label>Métier exercé</label>
+          <input type="text" name="job" required />
+        </li>
+        <li>
+          <label>Nationalité</label>
+          <input type="text" name="nationality" required />
+        </li>
+        <li>
+          <label>Date de naissance</label>
+          <input type="date" name="birth_date" required />
+        </li>
+        <li>
+          <label>Pays de naissance</label>
+          <input type="text" name="birth_country" required />
+        </li>
+        <li>
+          <label>Numéro de sécurité social</label>
+          <input type="number" name="social_security" required />
+        </li>
+        <li>
+          <label>Numéro du passeport</label>
+          <input type="number" name="passport" required />
+        </li>
+        <li>
+          <label>Date de délivrance du passeport</label>
+          <input type="date" name="passport_issue_date" required />
+        </li>
+        <li>
+          <label>Date de validité du passeport</label>
+          <input type="date" name="passport_validity_date" required />
+        </li>
+      </ul>
     </form>
   </body>
 </html>
