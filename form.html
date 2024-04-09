@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>HTML FORM</title>
   </head>
   <body>
     <form method="post">
@@ -50,8 +50,22 @@
           <input type="text" name="city" required />
         </li>
         <li>
-          <label>Métier exercé</label>
-          <input type="text" name="job" required />
+          <label for="jobs">Métier exercé</label>
+          <select id="jobs">
+            <option value="" hidden disabled selected>Métier</option>
+
+            <option value="developpeur">Développeur</option>
+            <option value="administrateur-systeme">
+              Administrateur système
+            </option>
+            <option value="analyste-programmeur">Analyste programmeur</option>
+            <option value="infirmier">Infirmier</option>
+            <option value="medecin">Médecin</option>
+            <option value="kinésithérapeute">Kinésithérapeute</option>
+            <option value="enseignant">Enseignant</option>
+            <option value="ingenieur">Ingénieur</option>
+            <option value="commercial">Commercial</option>
+          </select>
         </li>
         <li>
           <label for="nationality">Nationalité</label>
@@ -61,7 +75,7 @@
             class="form-control"
             required
           >
-            <option value="" hidden disabled selected>null</option>
+            <option value="" hidden disabled selected>Nationalité</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Åland Islands">Åland Islands</option>
             <option value="Albania">Albania</option>
@@ -371,7 +385,7 @@
             required
             size="1"
           >
-            <option value="" hidden disabled selected>null</option>
+            <option value="" hidden disabled selected>Pays</option>
             <option value="Afghanistan">Afghanistan</option>
             <option value="Åland Islands">Åland Islands</option>
             <option value="Albania">Albania</option>
