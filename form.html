@@ -6,7 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <form>
+    <form method="post">
       <ul>
         <li>
           <label>Prénom :</label>
@@ -38,10 +38,10 @@
         <li>
           <label>Code postal</label>
           <input
-            type="number"
+            type="text"
             name="address_code"
-            minlength="5"
-            maxlength="5"
+            pattern="[0-9]{5}"
+            title="Entrez un numéro valide"
           />
         </li>
         <li>
@@ -662,11 +662,22 @@
         </li>
         <li>
           <label>Numéro de sécurité social</label>
-          <input type="number" name="social_security" required />
+          <input
+            type="text"
+            name="social_security"
+            pattern="[12][0-9]{2}(0[1-9]|1[0-2])[0-9]{2}[0-9]{3}[0-9]{3}([0-9]{2})"
+            title="Entrez un numéro valide"
+          />
         </li>
         <li>
           <label>Numéro du passeport</label>
-          <input type="number" name="passport" required />
+          <input
+            type="text"
+            name="passport"
+            pattern="[0-9]{2}[A-z]{2}[0-9]{5}"
+            title="Entrez un numéro valide"
+            required
+          />
         </li>
         <li>
           <label>Date de délivrance du passeport</label>
@@ -676,8 +687,10 @@
           <label>Date de validité du passeport</label>
           <input type="date" name="passport_validity_date" required />
         </li>
+        <li>
+          <input type="submit" />
+        </li>
       </ul>
-      <input type="submit" />
     </form>
   </body>
 </html>
